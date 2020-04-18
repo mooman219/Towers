@@ -1,1 +1,0 @@
-xcopy "..\..\Tower" "C:\Users\Mooma\AppData\Roaming\Factorio\mods\Tower_0.1.0" /y /s
