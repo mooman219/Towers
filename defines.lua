@@ -1,0 +1,15 @@
+-- Tower generation settings for ore, land, water, and enemies.
+ORE_REPEAT = 10
+TOWER_WIDTH = 10
+WATER_WIDTH = 20
+ENEMY_MAX = 60
+
+-- Computed values for the tower generation settings.
+CHUNK = 32
+RIDGE = 16
+TELEPORT_DISTANCE = CHUNK * (TOWER_WIDTH + WATER_WIDTH)
+TOWER_RIDGE = TOWER_WIDTH * RIDGE
+WATER_RIDGE = WATER_WIDTH * RIDGE
+ORE_RIDGE = ORE_REPEAT * RIDGE
+ORE_CHUNK = ORE_REPEAT * CHUNK
+ENEMY_MAX_CHUNK = ENEMY_MAX * CHUNK
