@@ -1,3 +1,5 @@
+local noise = require("noise")
+
 function deepcopy(orig)
     local orig_type = type(orig)
     local copy
@@ -11,4 +13,8 @@ function deepcopy(orig)
         copy = orig
     end
     return copy
+end
+
+function water_level_correction(to_be_corrected, map)
+    return noise.max(map.wlc_elevation_minimum, to_be_corrected + map.wlc_elevation_offset)
 end
